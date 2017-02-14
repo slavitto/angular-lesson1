@@ -121,5 +121,13 @@ angular.module('myApp.view1', ['ngRoute'])
         }];
 
         $scope.myOrderProperty = 'id';
+        $scope.myClick = function(name) {
+            alert(name);
+        }
+        $scope.myStyle = function(type, name) {
+            if(type == "grass") document.querySelector('#' + name).style.color = "green";
+            if(type == "water") document.querySelector('#' + name).style.color = "blue";
+            if(type == "fire") document.querySelector('#' + name).style.color = "red";
+        }
 
     });
