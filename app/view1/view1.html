@@ -19,8 +19,8 @@
         <img src="{{pokemon.ThumbnailImage}}" ng-click="myClick(pokemon.name)">
 
         <small>ID #{{pokemon.id }}</small>
-        <h1 ng-style="myStyle(pokemon.type[0], pokemon.name)" id="{{pokemon.name}}">{{pokemon.name}}</h1>
-        <p>Вес: {{pokemon.weight}}, рост: {{pokemon.height}}</p>
+        <h1 ng-class="myStyle(pokemon.type[0], pokemon.name)" id="{{pokemon.name}}">{{pokemon.name}}</h1>
+        <p>Вес: {{pokemon.weight}}, рост: {{pokemon.height}}</p>/
         <p>Тип: {{pokemon.type[0]}}</p>
         <hr />
     </li>

@@ -118,6 +118,7 @@ angular.module('myApp.view1', ['ngRoute'])
             "type": [
                 "normal"
             ]
+
         }];
 
         $scope.myOrderProperty = 'id';
